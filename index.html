@@ -3,12 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="front-end mentor single portfolio page with HTML, CustomCSS and JavaScript"
+    />
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      media="(max-width: 780px)"
+      href="./assets/images/image-profile-mobile.webp"
+    />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      media="(max-width: 1120px)"
+      href="./assets/images/image-profile-tablet.webp"
+    />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      media="(min-width: 1120px)"
+      href="./assets/images/image-profile-desktop.webp"
     />
 
     <link rel="stylesheet" href="./css/style.css" />
@@ -22,6 +47,7 @@
           <li>
             <a href="#"
               ><svg
+                aria-label="github"
                 class="links__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -38,6 +64,7 @@
           <li>
             <a href="#"
               ><svg
+                aria-label="frontend mentor"
                 class="links__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -53,6 +80,7 @@
           <li>
             <a href="#"
               ><svg
+                aria-label="linkedin"
                 class="links__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -69,6 +97,7 @@
           <li>
             <a href="#"
               ><svg
+                aria-label="twitter"
                 class="links__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -290,35 +319,37 @@
           </div>
           <form id="email-form" class="contact__form" novalidate>
             <div class="contact__input-box">
-              <div class="contact__input" id="name-input">
+              <div class="contact__input">
                 <input
                   class="input"
                   id="name"
                   type="text"
                   placeholder="Name"
                   required
+                  aria-label="name"
                 />
                 <img src="./assets/images/icon-error.svg" alt="" />
               </div>
 
-              <span class="error"></span>
+              <span class="error" aria-live="polite"></span>
             </div>
             <div class="contact__input-box">
-              <div class="contact__input" id="email-input">
+              <div class="contact__input">
                 <input
                   id="email"
                   class="input"
                   type="email"
                   placeholder="Email"
                   required
+                  aria-label="email"
                 />
                 <img src="./assets/images/icon-error.svg" alt="" />
               </div>
 
-              <span class="error"></span>
+              <span class="error" aria-live="polite"></span>
             </div>
             <div class="contact__input-box">
-              <div class="contact__input" id="message-input">
+              <div class="contact__input>
                 <textarea
                   id="message"
                   class="input"
@@ -327,11 +358,12 @@
                   cols="30"
                   rows="5"
                   required
+                  aria-label="message"
                 ></textarea>
                 <img src="./assets/images/icon-error.svg" alt="" />
               </div>
 
-              <span class="error"></span>
+              <span class="error" aria-live="polite"></span>
             </div>
 
             <button class="btn" type="submit">Send Message</button>
@@ -343,6 +375,7 @@
             <li>
               <a href="#"
                 ><svg
+                  aria-label="github"
                   class="links__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -359,6 +392,7 @@
             <li>
               <a href="#"
                 ><svg
+                  aria-label="frontend mentor"
                   class="links__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
@@ -374,6 +408,7 @@
             <li>
               <a href="#"
                 ><svg
+                  aria-label="linkedin"
                   class="links__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -390,6 +425,7 @@
             <li>
               <a href="#"
                 ><svg
+                  aria-label="twitter"
                   class="links__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
